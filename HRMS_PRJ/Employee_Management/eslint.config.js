@@ -5,9 +5,12 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  // Ignore dist folder everywhere
   { ignores: ['dist'] },
+
+  // Frontend React files (.js, .jsx)
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['HRMS_PRJ/Employee_Management/**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -33,6 +36,27 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+
+  // Backend Node.js files (.js)
+  {
+    files: ['HRMS_PRJ/Employee_Management/backend/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.node,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'script',  // CommonJS uses 'script'
+      },
+      env: {
+        node: true,
+        commonjs: true,
+      },
+    },
+    rules: {
+      ...js.configs.recommended.rules,
+      // optionally add Node.js specific rules here
     },
   },
 ]
