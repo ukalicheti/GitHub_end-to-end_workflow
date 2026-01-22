@@ -15,7 +15,7 @@ const Header = () => {
         <Bell className="w-5 h-5 text-gray-600 cursor-pointer" />
         <Mail className="w-5 h-5 text-gray-600 cursor-pointer" />
         <div className="flex items-center space-x-2">
-          <span className="font-medium">UDAY</span>
+          <span className="font-medium">UDAY kiran</span>
           <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
         </div>
       </div>
