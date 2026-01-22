@@ -10,7 +10,7 @@ const Home = () => {
             <p className="text-4xl font-bold mt-2">1000</p>
           </div>
           <div className="bg-gradient-to-r from-cyan-400 to-purple-500 text-white p-6 rounded-2xl shadow-md">
-            <h2 className="text-xl">Leave</h2>
+            <h2 className="text-xl">Leaves</h2>
             <p className="text-4xl font-bold mt-2">150</p>
           </div>
           <div className="bg-gradient-to-r from-cyan-400 to-purple-500 text-white p-6 rounded-2xl shadow-md">
